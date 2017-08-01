@@ -3,6 +3,6 @@
 
 ............
 
-[test](https://tmp2tmp.github.io/test/)
+[home](https://tmp2tmp.github.io/)
 
 
