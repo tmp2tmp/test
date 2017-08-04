@@ -27,7 +27,7 @@
           <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
 
           <h1 id="project_title">{{ page.title | default: site.github.repository_name }}</h1>
-          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+          <h2 id="project_tagline">{{ page.description | default: site.github.project_tagline }}</h2>
 
           {% if site.show_downloads %}
             <section id="downloads">
@@ -42,11 +42,11 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 	      <div style='border:5px solid darkblue'>
-		    code-width class='.code-width-{{page.code-width}}'
-		    1--{{ page.title | default: site.github.repository_name }}<br>
-		    2--{{ page.title | default: site.title | default: site.github.repository_name }}<Br>
+		    code-width class='.code-width-{{ page.code-width }}'
+		    page.title | default: site.github.repository_name = {{ page.title | default: site.github.repository_name }}<br>
 		    docs/.... .... .... .... .... .... .... .... ....<br>
 		    page.title = {{ page.title }}<br>
+		    site.github.project_tagline = {{ site.github.project_tagline }}<br>
 	      </div>
         {{ content }}
       </section>
