@@ -1,5 +1,6 @@
 ---
 css: test.css
+code-width: 1100px
 ---
 title: ttt---
 
