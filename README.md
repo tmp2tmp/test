@@ -1,7 +1,3 @@
----
-title: tttttttttt
-subtitle: sssssssssssss
----
 
 ## welcome
 
