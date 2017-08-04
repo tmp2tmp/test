@@ -4,13 +4,6 @@
 - ssss
 - ddddd
 
-```c++
-#include <iostream>
-using namespace std;
-int main() {
-   cout << "hello world!" << endl;
-}
-```
 
 ```c++
 //file: 1--hello_world.cc
