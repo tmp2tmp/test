@@ -9,20 +9,18 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
-    <title> {{ page.title | default: site.github.repository_name }} </title>
-
+    <title>{{ site.title | default: site.github.repository_name }}</title>
   </head>
 
   <body>
-
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
 
-          <h1 id="project_title">{{ page.title | default: site.github.repository_name }}</h1>
-          <h2 id="project_tagline">{{ page.description | default: site.github.project_tagline }}</h2>
+          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
 
           {% if site.show_downloads %}
             <section id="downloads">
@@ -36,12 +34,6 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-	      <div style='border:5px solid darkblue'>
-		    page.title | default: site.github.repository_name = {{ page.title | default: site.github.repository_name }}<br>
-		    docs/.... .... .... .... .... .... .... .... ....<br>
-		    page.title = {{ page.title }}<br>
-		    site.github.project_tagline = {{ site.github.project_tagline }}<br>
-	      </div>
         {{ content }}
       </section>
     </div>
