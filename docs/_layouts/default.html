@@ -40,6 +40,8 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+	1--{{ page.title | default: site.github.repository_name }}<br>
+	2--{{ page.title | default: site.title | default: site.github.repository_name }}<Br>
 	docs/.... .... .... .... .... .... .... .... ....<br>
 	page.title = {{ page.title }}<br><br>
         {{ content }}
