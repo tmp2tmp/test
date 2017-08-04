@@ -2,6 +2,8 @@
 title: ttt---
 css: test.css
 ---
+@import "{{ site.theme }}";
+
 ### ttt.md
 
 ...........
