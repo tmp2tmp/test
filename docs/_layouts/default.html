@@ -13,12 +13,7 @@
 
   </head>
 
-{% if page.code-width %}
-  <body class='.code-width-{{ page.code-width }}'>
-{% else %}
   <body>
-{% endif %}
-
 
 
     <!-- HEADER -->
@@ -42,7 +37,6 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 	      <div style='border:5px solid darkblue'>
-		    code-width class='.code-width-{{ page.code-width }}'
 		    page.title | default: site.github.repository_name = {{ page.title | default: site.github.repository_name }}<br>
 		    docs/.... .... .... .... .... .... .... .... ....<br>
 		    page.title = {{ page.title }}<br>
