@@ -1,0 +1,5 @@
+theme: jekyll-theme-slate
+#title: test...
+description: " "
+markdown: kramdown
+highlighter: rouge
